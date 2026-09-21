@@ -4,15 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
     <title>rocketrikshaw</title>
   </head>
-  <body style=" width: 100%; height: 100%;">
+  <body style="width: 100%; height: 100%;">
+    <div id="app">
+    </div>
     <div class="imgHolder" 
-    style="position: absolute; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    style="position:absolute; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
       <img src="/AutoOverlay.png" alt="auto overlay" class="img-container" 
       style="width: auto; height: 100%; display: block; pointer-events: none;">
     </div>  
-    <div id="app">
+    <div id="contextHolder">
+      <div id="waySetter">
+        <span>Look Where We Are!</span>
+      </div>
+      <div id="expanded">
+        
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
